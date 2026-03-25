@@ -870,5 +870,9 @@ body.chat-mode .composer-bar{
   body.with-collapsed-sidebar .sidebar{
     transform: translateX(-130%);
   }
+.sidebar.hidden{
+  transform: translateX(-110%);
+  transition: transform 0.3s ease;
+}
 }
 
