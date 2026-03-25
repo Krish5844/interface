@@ -498,6 +498,20 @@ body{
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
+body.with-collapsed-sidebar #sidebar{
+  transform: translateX(-100%);
+}
+
+body.with-collapsed-sidebar .chat-main{
+  margin-left: 0;
+}
+.mobile-sidebar-toggle{
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+}
 .suggestions{
   display:flex;
   flex-wrap:wrap;
