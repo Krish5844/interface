@@ -463,5 +463,10 @@ function boot() {
   wireChatTitleOnFirstUserMessage();
   initVoidTitleEntrance();
 }
+const toggleBtn = document.getElementById('mobileSidebarToggle');
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('with-collapsed-sidebar');
+);
 
 boot();
