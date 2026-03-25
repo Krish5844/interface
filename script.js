@@ -313,6 +313,13 @@ function generateVoidReply(userText, mode, attachments) {
     mode === "craft"
       ? "I’ll focus on typography, spacing, and futuristic glass layers."
       : "I’ll propose a clean, premium layout with neon depth.";
+  const toggle = document.getElementById("mobileSidebarToggle");
+
+if (toggle){
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("with-collapsed-sidebar");
+  });
+}
 
   const base = `${vibe}\n\nYour request: “${t}”\n\n${craftLine}\n\nNext step: tell me 1) the target device (mobile/desktop/both) and 2) the top 2 sections you care about most. ${
     attachmentLine ? `\n\n${attachmentLine}` : ""
